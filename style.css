@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --primary-bright-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+  --neutral-transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --neutral-very-light-gray-bg-h-btn: hsl(0, 0%, 95%);
+}
+
+h1 {
+  font-size: 32px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: var(--neutral-very-light-gray-bg-h-btn);
+}
+
+p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--neutral-transparent-white-p);
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+main {
+  margin-bottom: 64px;
+}
+
+section {
+  padding: 48px;
+}
+
+.sedans {
+  background-color: var(--primary-bright-orange);
+  border-radius: 12px 12px 0 0;
+}
+
+.suvs {
+  background-color: var(--primary-dark-cyan);
+}
+
+.luxury {
+  background-color: var(--primary-very-dark-cyan);
+  border-radius: 0 0 12px 12px;
+}
+
+article {
+  margin-bottom: 32px;
+}
+
+button {
+  background-color: var(--neutral-very-light-gray-bg-h-btn);
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  color: black;
+  mix-blend-mode: screen;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  box-shadow: inset 0px 0px 0px 2px white;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer p {
+  color: black;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer a:hover {
+  color: hsl(228, 81%, 56%);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    min-height: 100vh;
+    padding: 0;
+    margin: auto 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    max-width: 800px;
+  }
+
+  .sedans {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .luxury {
+    border-radius: 0 12px 12px 0;
+  }
+}
